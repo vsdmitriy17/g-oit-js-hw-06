@@ -1,0 +1,13 @@
+// -------------Общие-------------------
+@import './utils/vars'; // ПОЛИТРА ЦВЕТОВ И ТЕНЕЙ, ПЕРЕМЕННЫЕ РАЗМЕРОВ И ОТСТУПОВ
+@import './utils/mixins'; // Шрифты (font), flex
+@import './base/reset'; // СБРОС СТИЛЕЙ ЗАГОЛОВКОВ, АБЗАЦЕВ, СПИСКОВ, ИЗОБРАЖЕНИЙ, ССЫЛОК 
+@import './base/common'; // ОБЩИЕ СТИЛИ СЕКЦИЙ 
+
+// --------------Header--------------------
+@import './layuot/header/header'; // ШАПКА (HEADER)
+
+// ----------Стр. Requirements------------------------
+@import './layuot/requirements'; 
+@import './layuot/task3'; 
+@import './layuot/task6'; 

@@ -1,0 +1,40 @@
+/* ----------------ОБЩИЕ СТИЛИ СЕКЦИЙ------------------ */
+
+.body {                /*Фон, цвет и Шрифт текста параграфов в секциях*/
+    background-color: var(--brand-white-color);
+    color: var(--main-color);
+    font-family: Roboto, sans-serif;
+    padding-top: 84px;
+}
+
+.conteiner {   /*Контейнер для центрирования шапки, контента и футера*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+
+}
+
+.section__title {   /*Заголовок Секции h2*/
+    display: block;
+    text-align: center;
+
+    @include font(var(--main-color), 700, 36px, 1.17, 0.03em);
+    margin-bottom: 50px;
+}
+
+.page-title {
+    @include font(var(--secondary-color), 700, 36px, 1.17, 0.03em);
+}
+
+.box {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.article-border {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--main-color);
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+    <!-- Подключение шрифтов Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Подключение Нормализации (https://cdnjs.com/libraries/modern-normalize) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Подключение стилей css -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body class="body">
+
+    <!---------------------------ШАПКА (HEADER)------------------------->
+    <header class="header">
+        <div class="conteiner">
+            <!--Навигация-->
+            <nav class="nav">
+                <!--Логотип-->
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo.png" alt="logo" width="70" />
+                </a>
+
+                <h1 class="page-title">ДЗ-6 Задача-3</h1>
+
+                <div class="nav-item">
+                    <a href="./index.html"
+                        class="site-nav__link site-nav__requirements">Критерии приема</a>
+
+                    <button type="button" class="nav-button js-open-menu" aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <svg class="nav-button__icon">
+                            <use href="./img/symbol-defs.svg#icon-header-menu"></use>
+                        </svg>
+                        <span class="site-nav__btn">Задачи</span>
+                    </button>
+                </div>
+
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="nav-button js-close-menu">
+                        <svg class="site-nav__icon">
+                            <use href="./img/symbol-defs.svg#icon-menu-close"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="site-nav">
+                        <li class="site-nav__item">
+                            <a href="./task-1.html" class="site-nav__link">Задача-1</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-2.html" class="site-nav__link">Задача-2</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-3.html" class="site-nav__link site-nav__link--current">Задача-3</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-4.html" class="site-nav__link">Задача-4</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-5.html" class="site-nav__link">Задача-5</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-6.html" class="site-nav__link">Задача-6</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-7.html" class="site-nav__link">Задача-7</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-8.html" class="site-nav__link">Задача-8</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-9.html" class="site-nav__link">Задача-9</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-10.html" class="site-nav__link">Задача-10</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+    <!--Основной контент (main)-->
+    <main>
+        <article class="conteiner box article-border">
+            <p>
+                Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery. <br> <br>
+            Используй массив объектов images для создания элементов img вложенных в li. Для создания разметки используй
+                шаблонные строки и метод insertAdjacentHTML().
+            </p>
+            <ol>
+                <li>
+                    <p>Все элементы галереи должны добавляться в DOM за одну операцию вставки.</p>
+                </li>
+        
+                <li>
+                    <p>Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.</p>
+                </li>
+            </ol>
+            <p> 
+                Массив данных: <br> <br>
+                const images = [ <br>
+                { <br>
+                    url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260', <br>
+                    alt: 'White and Black Long Fur Cat', <br>
+                }, <br>
+                { <br>
+                    url: 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260', <br>
+                    alt: 'Orange and White Koi Fish Near Yellow Koi Fish', <br>
+                }, <br>
+                { <br>
+                    url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260', <br>
+                    alt: 'Group of Horses Running', <br>
+                }, <br>
+                ]; <br>
+            </p>
+        </article>
+
+        <section class="conteiner box article-border">
+            <ul class="gallery"></ul>
+        </section>
+
+    </main>
+
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/task-3.js" type="module"></script>
+</body>
+
+</html>

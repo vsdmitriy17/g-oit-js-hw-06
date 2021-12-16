@@ -1,0 +1,26 @@
+                /* ПОЛИТРА ЦВЕТОВ И ТЕНЕЙ, ПЕРЕМЕННЫЕ РАЗМЕРОВ И ОТСТУПОВ */
+:root {
+    --main-color: #757575; /*Основной цвет текста - цвет абзаца*/
+    --secondary-color: #212121; /*Вторичный цвет текста - цвет заголовков*/
+    --accent-color: #2196F3; /*Акцент - цвет ссылок*/ 
+    --brand-white-color: #FFFFFF; /*Основной белый цвет фона, логотип, текст футер, герой*/
+    --logo-black-color: #000000; /*Цвет логотипа в шапке*/
+    --mail-footer-color: rgba(235, 235, 235, 1); /*Цвет почты футера*/
+    --secondary-background: #F5F4FA; /*Вторичный цвет фона, цвет кнопок, Фон иконок секции ОСОБЕННОСТИ */
+    --footer-background: #2F303A; /*Фон футера и Героя*/
+    --icon-color: #AFB1B8; /*Цвет иконок*/
+
+    --header-border: #ECECEC; /* Цвет граници Header*/
+    --gallery-border: #EEEEEE; /* Цвет граници Gallery-card */
+
+    --item-gap: 30px; /*Зазор между элементами сетки*/
+    --hero-max-width: 1600px;  /* Максимальная ширина фона hero*/
+    --hero-min-height: 600px;  /* Минимальная высота фона hero*/
+
+    --shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); /* Тень для карточек "Наша команда"*/
+    --shadow-hero-button: 0px 4px 4px 0px #00000026; /* Тень кнопки hero */
+    --shadow-filter-button: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    --shadow-modal: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
+    --shadow-gallery: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+
+}

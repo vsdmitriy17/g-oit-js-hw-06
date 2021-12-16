@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-10</title>
+    <!-- Подключение шрифтов Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Подключение Нормализации (https://cdnjs.com/libraries/modern-normalize) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Подключение стилей css -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body class="body">
+
+    <!---------------------------ШАПКА (HEADER)------------------------->
+    <header class="header">
+        <div class="conteiner">
+            <!--Навигация-->
+            <nav class="nav">
+                <!--Логотип-->
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo.png" alt="logo" width="70" />
+                </a>
+
+                <h1 class="page-title">ДЗ-6 Задача-10</h1>
+
+                <div class="nav-item">
+                    <a href="./index.html"
+                        class="site-nav__link site-nav__requirements">Критерии приема</a>
+
+                    <button type="button" class="nav-button js-open-menu" aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <svg class="nav-button__icon">
+                            <use href="./img/symbol-defs.svg#icon-header-menu"></use>
+                        </svg>
+                        <span class="site-nav__btn">Задачи</span>
+                    </button>
+                </div>
+
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="nav-button js-close-menu">
+                        <svg class="site-nav__icon">
+                            <use href="./img/symbol-defs.svg#icon-menu-close"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="site-nav">
+                        <li class="site-nav__item">
+                            <a href="./task-1.html" class="site-nav__link">Задача-1</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-2.html" class="site-nav__link">Задача-2</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-3.html" class="site-nav__link">Задача-3</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-4.html" class="site-nav__link">Задача-4</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-5.html" class="site-nav__link">Задача-5</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-6.html" class="site-nav__link">Задача-6</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-7.html" class="site-nav__link">Задача-7</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-8.html" class="site-nav__link">Задача-8</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-9.html" class="site-nav__link">Задача-9</a>
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a href="./task-10.html" class="site-nav__link site-nav__link--current">Задача-10</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+    <!--Основной контент (main)-->
+    <main>
+        <article class="conteiner box article-border">
+            <p>
+                Напиши скрипт создания и очистки коллекции элементов. Пользователь вводит количество элементов в input и нажимает кнопку
+                Создать, после чего рендерится коллекция. При нажатии на кнопку Очистить, коллекция элементов очищается. <br> <br>
+            </p>
+            <p>
+                Создай функцию createBoxes(amount), которая принимает один параметр - число. Функция создает столько div, сколько
+                    указано в amount и добавляет их в div#boxes.
+            </p>
+            <ol>
+                <li>
+                    <p>Размеры самого первого div - 30px на 30px.</p>
+                </li>
+        
+                <li>
+                    <p>Каждый элемент после первого, должен быть шире и выше предыдущего на 10px.</p>
+                </li>
+
+                <li>
+                    <p>Все элементы должены иметь случайный цвет фона в формате HEX. Используй готовую функцию getRandomHexColor для получения
+                    цвета.</p>
+                </li>
+            </ol>
+            <p>
+                function getRandomHexColor() { <br>
+                return `#${Math.floor(Math.random() * 16777215).toString(16)}`; <br>
+                } <br> <br>
+                
+                Создай функцию destroyBoxes(), которая очищает содержимое div#boxes, тем самым удаляя все созданные элементы. <br>
+            </p>
+        </article>
+        
+        <section class="conteiner box">
+            <div id="controls">
+                <input type="number" min="1" max="100" step="1" />
+                <button type="button" data-create>Create</button>
+                <button type="button" data-destroy>Destroy</button>
+            </div>
+            
+            <div id="boxes"></div>
+        </section>
+    </main>
+
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/task-10.js" type="module"></script>
+
+</body>
+
+</html>

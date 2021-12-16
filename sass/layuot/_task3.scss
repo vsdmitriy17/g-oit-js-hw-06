@@ -1,0 +1,11 @@
+.task3-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task3-list__item {
+    &:not(:last-child) {
+        margin-right: 20px;
+    };
+}

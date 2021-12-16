@@ -1,0 +1,9 @@
+.requirements-list {
+    list-style: disc;
+}
+
+.requirements-list__item {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
